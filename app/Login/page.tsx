@@ -21,12 +21,14 @@ import {
     from 'mdb-react-ui-kit';
 
 const LoginPage = () => {
-    const [error, SetError] = useState<string>("");
+    const [errors, SetError] = useState<string>("");
     const { handleSubmit, register } = useForm<ILogin>();
     const router = useRouter();
 
     const onSubmit = handleSubmit(async (formData, event) => {
         event?.preventDefault();
+
+
         const responseLogin = await signIn("credentials", {
             username: formData.username,
             password: formData.password,
@@ -60,20 +62,26 @@ const LoginPage = () => {
                             <MDBCardBody className='d-flex flex-column'>
 
                                 <div className='d-flex justify-content-center'>
-                                       <img src="/logo-removebg.svg" alt="Logo Cafe Contigo"  width={150} height={150} />
+                                    <img src="/logo-removebg.svg" alt="Logo Cafe Contigo" width={150} height={150} />
                                 </div>
 
                                 <h5 className="fw-normal my-1 pb-3" style={{ letterSpacing: '1px' }}>Ingresa con tu cuenta</h5>
 
                                 <form onSubmit={onSubmit}>
-                                    <MDBInput wrapperClass='mb-4' label='Correo' type='text' size="lg" {...register("username")} />
-                                    <MDBInput wrapperClass='mb-2' label='Contraseña' type='password' size="lg" {...register("password")} />
-                                    <div className='d-flex flex-wrap'>
-                                        <button type="submit" style={{ width : '100%'}} className={styles.btnprincipal}>Ingresar</button>
+                                    <div className="col-12 my-3">
+                                        <input type="text" className="form-control form-control-lg" {...register("username",{ required: "El correo es obligatorio" })} />
+                                        <label htmlFor="username">Correo</label>
+                                    </div>
+                                    <div className="col-12 my-3 ">
+                                        <input type="password" className="form-control form-control-lg" {...register("password",{ required: "La contraseña es obligatoria" })} />
+                                        <label htmlFor="password">Contraseña</label>
+                                    </div>
+                                    <div >
+                                        <button type="submit" style={{ width: '100%' }} className={styles.btnprincipal}>Ingresar</button>
                                     </div>
                                 </form>
 
-                                <p className="mb-5 pb-lg-2 my-3" style={{ color: '#393f81' }}>¿No tiene una cuenta? <a href="#" style={{ color: '#393f81' }}>Pulsa aquí</a></p>
+                                <p className="mb-5 pb-lg-2 my-3" style={{ color: '#553600' }}>¿No tiene una cuenta? <a href="#" style={{ color: '#393f81' }}>Pulsa aquí</a></p>
 
                             </MDBCardBody>
                         </MDBCol>

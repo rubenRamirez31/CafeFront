@@ -29,66 +29,66 @@ const AgregarProductosPage = async () => {
 
     async function onSubmit(event: FormEvent<HTMLFormElement>) {
         event.preventDefault()
-     
+
         const formData = new FormData(event.currentTarget)
         const response = await fetch('http://localhost:8080/Productos', {
-          method: 'POST',
-          headers: {
-            "Content-Type": "application/json",
-            'Authorization': `Bearer ${session?.user.token}`
-          },
-          body: JSON.stringify({
-            nombre: formData.get("nombre"),
-            descripcion: formData.get("descripcion"),
-            precio: formData.get("precio"),
-            idCategoria: formData.get("idcategoria")
-          })
+            method: 'POST',
+            headers: {
+                "Content-Type": "application/json",
+                'Authorization': `Bearer ${session?.user.token}`
+            },
+            body: JSON.stringify({
+                nombre: formData.get("nombre"),
+                descripcion: formData.get("descripcion"),
+                precio: formData.get("precio"),
+                idCategoria: formData.get("idcategoria")
+            })
         });
-        
+
         const data = await response.json()
         alert(data.mensaje);
-      }
+    }
 
 
     return (
-    <>
-        <form className="mt-3" onSubmit={onSubmit}>
-            <div className="row">
-                <div className="col-6">
-                    <label htmlFor="">Nombre</label>
-                    <input type="text" name="nombre" className="form-control" />
+        <>
+            <form className="mt-3" onSubmit={onSubmit}>
+                <div className="row">
+                    <div className="col-6">
+                        <label htmlFor="">Nombre</label>
+                        <input type="text" name="nombre" className="form-control" />
+                    </div>
                 </div>
-            </div>
-            <div className="row">
-                <div className="col-6">
-                    <label htmlFor="">Descripcion</label>
-                    <textarea className="form-control" name="descripcion"></textarea>
+                <div className="row">
+                    <div className="col-6">
+                        <label htmlFor="">Descripcion</label>
+                        <textarea className="form-control" name="descripcion"></textarea>
+                    </div>
                 </div>
-            </div>
-            <div className="row">
-                <div className="col-6">
-                    <label htmlFor="">Precio</label>
-                    <input type="text" name="precio" className="form-control" />
+                <div className="row">
+                    <div className="col-6">
+                        <label htmlFor="">Precio</label>
+                        <input type="text" name="precio" className="form-control" />
+                    </div>
                 </div>
-            </div>
-            <div className="row">
-                <div className="col-6">
-                    <label htmlFor="">Categorías</label>
-                    <select className="form-select" name="idcategoria">
-                        {categorias.map((e :  ICategoria) =>
-                            <option key={e.idCategoria} value={e.idCategoria}>{e.nombre}</option>
-                        )}
-                    </select>
+                <div className="row">
+                    <div className="col-6">
+                        <label htmlFor="">Categorías</label>
+                        <select className="form-select" name="idcategoria">
+                            {categorias.map((e: ICategoria) =>
+                                <option key={e.idCategoria} value={e.idCategoria}>{e.nombre}</option>
+                            )}
+                        </select>
+                    </div>
                 </div>
-            </div>
-            <div className="row mt-3">
-                <div className="col-6">
-                    <button type="submit" className="btn btn-success">Guardar</button>
+                <div className="row mt-3">
+                    <div className="col-6">
+                        <button type="submit" className="btn btn-success">Guardar</button>
+                    </div>
                 </div>
-            </div>
-        </form>
-    </>
-  )
+            </form>
+        </>
+    )
 }
 
 export default AgregarProductosPage
