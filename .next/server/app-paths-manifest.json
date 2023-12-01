@@ -1,7 +1,1 @@
-{
-  "/Registrar/page": "app/Registrar/page.js",
-  "/page": "app/page.js",
-  "/Login/page": "app/Login/page.js",
-  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
-  "/not-found": "app/not-found.js"
-}
+{}
