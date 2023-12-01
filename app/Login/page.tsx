@@ -49,15 +49,12 @@ const LoginPage = () => {
 
     return (
         <>
-
             <MDBContainer className="my-4">
-
                 <MDBCard>
                     <MDBRow className='g-0'>
                         <MDBCol md='6'>
                             <MDBCardImage src='/logincafe.jpg' alt="login form" className='rounded-start w-100' />
                         </MDBCol>
-
                         <MDBCol md='6'>
                             <MDBCardBody className='d-flex flex-column'>
 
@@ -69,11 +66,11 @@ const LoginPage = () => {
 
                                 <form onSubmit={onSubmit}>
                                     <div className="col-12 my-3">
-                                        <input type="text" className="form-control form-control-lg" {...register("username",{ required: "El correo es obligatorio" })} />
+                                        <input type="text" className="form-control form-control-lg" {...register("username", { required: "El correo es obligatorio" })} />
                                         <label htmlFor="username">Correo</label>
                                     </div>
                                     <div className="col-12 my-3 ">
-                                        <input type="password" className="form-control form-control-lg" {...register("password",{ required: "La contraseña es obligatoria" })} />
+                                        <input type="password" className="form-control form-control-lg" {...register("password", { required: "La contraseña es obligatoria" })} />
                                         <label htmlFor="password">Contraseña</label>
                                     </div>
                                     <div >
@@ -81,14 +78,12 @@ const LoginPage = () => {
                                     </div>
                                 </form>
 
-                                <p className="mb-5 pb-lg-2 my-3" style={{ color: '#553600' }}>¿No tiene una cuenta? <a href="#" style={{ color: '#393f81' }}>Pulsa aquí</a></p>
+                                <p className="mb-5 pb-lg-2 my-3" style={{ color: '#553600' }}>¿No tiene una cuenta? <a href="/Registrar" style={{ color: '#393f81' }}>Pulsa aquí</a></p>
 
                             </MDBCardBody>
                         </MDBCol>
-
                     </MDBRow>
                 </MDBCard>
-
             </MDBContainer>
 
         </>

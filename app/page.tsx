@@ -23,6 +23,8 @@ const PrincipalPage = () => {
         .then(response => response.json())
         .then(json => setProductos(json))
         .catch(error => console.error('Error fetching products:', error));
+
+        console.log(session?.user);
     }
 
 
