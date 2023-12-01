@@ -1,0 +1,25 @@
+.principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.btnprincipal {
+    background-color: white;
+    color: #553600;
+    border-radius: 0.25rem;;
+    border: 1px solid ;
+    padding: 0.5rem 1rem;
+    transition: ease-out 200ms;
+}
+
+.btnprincipal:hover {
+    transition: ease-in-out 200ms;
+    background-color: #553600;
+    color: white;
+}
+
+.swal2-confirm {
+    color: #FFC900; 
+}
