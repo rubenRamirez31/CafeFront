@@ -1,12 +1,6 @@
 /*!*****************************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[12].oneOf[7].use[3]!./app/styles.module.css ***!
   \*****************************************************************************************************************************************************************************************************************************************************************/
-.styles_principal__xuY5r {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-}
 
 .styles_btnprincipal__ckkIc {
     background-color: white;
@@ -22,3 +16,286 @@
     background-color: #553600;
     color: white;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,500&display=swap');
+
+.styles_principal__xuY5r{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+ 
+}
+
+.styles_container__gp8ot{
+    max-width: 1200px;
+    margin:  0 auto;
+}
+
+.styles_header__2z886 {
+    
+   
+    background-image: linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)),
+      url('/bg.jpg');
+    background-position: center bottom;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+   
+  }
+  .styles_logo__ybFEG{
+    color: #fffdfc;
+    font-size: 25px;
+    font-weight: 800;
+  }
+
+  .styles_headerContent__1jrNU{
+    
+    text-align: center;
+  }
+
+  .styles_headerContent__1jrNU h1{
+    font-size: 75px;
+    line-height: 80px;
+    color: #f9fafc;
+    text-transform:  uppercase;
+    margin-bottom: 35px;
+  }
+
+  .styles_headerContent__1jrNU p{
+    font-size: 16px;
+    color: #c5c5c5;
+    padding: 0 250px;
+    margin-bottom:  25px;
+  }
+
+  .styles_btnt1__umR2q{
+    display:  inline-block;
+    padding: 13px 35px;
+    background-color: #ce967b;
+    color: #f9fafc;
+    text-transform: uppercase;
+  }
+
+  .styles_btnt1__umR2q:hover{
+    background-color: #ebadbd;
+  }
+
+.styles_coffee__bY56w{
+    padding: 100px 0;
+    background-color: #e1e2e6;
+    position: relative;
+
+}
+
+.styles_coffeeContent__FzDF8{
+    text-align: center;
+}
+
+.styles_coffeeContent__FzDF8 h2{
+    font-size:  55px;
+    line-height:  70px;
+    color: #323337;
+    text-transform: uppercase;
+    padding: 0 250px;
+    margin-bottom: 15px;
+
+}
+
+.styles_txtP__5f9gE{
+    font-size: 16;
+    color: #414247;
+    padding: 0 250px;
+    margin-bottom: 35px;
+}
+
+.styles_coffeeGroup__tnikg{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+}
+
+.styles_coffee1__thphs img{
+    padding: 0 25pxpx;
+
+}
+.styles_coffee1__thphs img{
+    width: 200px;
+
+}
+
+.styles_coffeeImg__Q_Zv8{
+    position:  absolute;
+    top: 0;
+    right: 0;
+}
+
+.styles_coffee1__thphs h3{
+    color: #323337;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.styles_searchButton__TdTIl {
+
+    font-family: 'Poppins', sans-serif;
+    background-color: red;
+}
+
+.styles_services__5R4WA{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.7),
+        rgba(0, 0, 0, 0.7)),
+        url('/bg2.jpg');
+    background-repeat: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 100px 0;
+}
+
+.styles_servicesContent__3nbmL{
+    text-align: center;
+
+}
+
+.styles_servicesContent__3nbmL h2{
+    font-size: 55px;
+    line-height: 70px;
+    color: #f9fafc;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.styles_servicesContent__3nbmL p{
+    font-size: 16px;
+    color: #c5c5c5;
+    margin-bottom: 50px;
+    padding: 0 100px;
+}
+
+.styles_servicesGroup__PV0DH{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.styles_services1__tww3T{
+    padding:  0 100px;
+}
+
+.styles_services1__tww3T img{
+    width:  25px;
+    margin-bottom: 15px;
+}
+
+.styles_services1__tww3T h3{
+    color: #eaccb3;
+    font-size: 18px;
+
+}
+
+.styles_general__EYxhG{
+
+display: flex;
+
+}
+
+.styles_general1__MSX2G{
+    width:  50%;
+    padding: 100px 250px 100px 100px;
+    background-color: #e1e2e6;
+
+}
+
+.styles_general2__hGOhw{
+    background-image: url('/coffe-1.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.styles_general3__Pq6u6{
+    background-image: url('/coffee-2.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 50%;
+}
+
+.styles_h2__YTmcS{
+    font-size: 55px;
+    line-height: 70;
+    color: #323337;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.styles_p__UhFDU{
+    font-size: 16px;
+    color: #414247;
+    margin: 25px 0 45px 0;
+}
+
+.styles_blog__AVcHT{
+    padding: 100px0;
+    text-align: center;
+}
+
+.styles_blogContent__EPy5B{
+    display: flex;
+    justify-content: space-around;
+}
+
+.styles_blog1__qBhKm{
+    padding: 15px 55px;
+}
+
+.styles_blog1__qBhKm img{
+    width: 250px;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.styles_blog1__qBhKm h3{
+    font-size: 25px;
+    color:#323337
+}
+
+
+.styles_Productos__OG_FZ{
+    text-align: center;
+    background-color: #414247;
+    padding: 100px0;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+/* styles.module.css */
+
+.styles_navbar__L1PQ3 {
+    background-color: transparent !important; /* Hace que el fondo sea transparente */
+    border: none; /* Elimina el borde */
+    transition: background-color 0.5s; /* Agrega una transición suave para el cambio de fondo */
+  }
+  
+  .styles_navbar-brand__xx5tq,
+  .styles_navbar-nav__INO_k .styles_nav-link__XjHKB {
+    color: rgb(0, 0, 0); /* Cambia el color del texto a blanco */
+  }
+  
+  /* Estilos adicionales para resaltar el enlace activo, si es necesario */
+  .styles_navbar-nav__INO_k .styles_nav-item__H1VdL.styles_active__sZl0i .styles_nav-link__XjHKB {
+    color: #000000; /* Cambia el color del texto del enlace activo */
+  }
+  
+  /* Puedes ajustar y agregar más estilos según tus necesidades */
+  

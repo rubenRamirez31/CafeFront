@@ -6,7 +6,7 @@ const NavBarComponent = () => {
   const { data: session, status } = useSession();
 
   return (
-    <nav className="navbar bg-primary navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+    <nav className="navbar bg-black navbar-expand-lg" data-bs-theme="dark">
       <div className="container-fluid">
         <Link className="navbar-brand" href="/">Inicio</Link>
       </div>

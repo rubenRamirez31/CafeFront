@@ -16,7 +16,7 @@ const Categorias = () => {
         method: 'GET',
         headers: {
           'Content-Type': 'application/json',
-          Authorization: `Bearer ${session.user.token}`,
+          
         },
       })
         .then((response) => response.json())

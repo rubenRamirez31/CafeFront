@@ -1,4 +1,4 @@
-// File: C:\Users\ruben\Downloads\CafeFront\app\page.tsx
+// File: D:\Proyecto Final 7\CafeFront\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

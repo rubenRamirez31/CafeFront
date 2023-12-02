@@ -1,4 +1,4 @@
-// File: C:\Users\ruben\Downloads\CafeFront\app\api\auth\[...nextauth]\route.ts
+// File: D:\Proyecto Final 7\CafeFront\app\api\auth\[...nextauth]\route.ts
 import * as entry from '../../../../../../app/api/auth/[...nextauth]/route.js'
 import type { NextRequest } from 'next/server.js'
 

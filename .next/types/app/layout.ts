@@ -1,4 +1,4 @@
-// File: C:\Users\ruben\Downloads\CafeFront\app\layout.tsx
+// File: D:\Proyecto Final 7\CafeFront\app\layout.tsx
 import * as entry from '../../../app/layout.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
