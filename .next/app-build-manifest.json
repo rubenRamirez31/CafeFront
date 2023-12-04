@@ -16,6 +16,18 @@
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/not-found.js"
+    ],
+    "/Login/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Login/page.css",
+      "static/chunks/app/Login/page.js"
+    ],
+    "/Tiendas/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/Tiendas/page.css",
+      "static/chunks/app/Tiendas/page.js"
     ]
   }
 }
